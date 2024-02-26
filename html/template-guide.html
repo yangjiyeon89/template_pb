@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../inc/css/reset.css">
+  <title>guide</title>
+</head>
+<style>
+  body {
+    padding: 10px;
+  }
+  body * {
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 24px;font-weight: 600;
+  }
+  h3 {
+    font-size: 18px;font-weight: 400;
+  }
+  table th, table td {border: 1px solid #ddd;padding: 15px;}
+  table th {font-weight: 500;}
+</style>
+<body>
+  <h2>Template Guide</h2>
+  <h3>template 최상단에 아이디값 지정 "#chunjae-template-guide"</h3>
+  <h3>모든 태그에 class 값 지정. 태그로 style 입히지 않음 ex) .class {color:red} O / span {color:red} X </h3>
+  <h3>템플릿에서 벗어나도 style 유지될 수 있게 컴포넌트 단위로 작업</h3>
+  <br />
+  <h2>공통 class</h2>
+  <table>
+    <colgroup>
+      <col width="20%">
+      <col width="80%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th>.component-align-left<br/>.component-align-center<br/>.component-align-right</th>
+        <td>align 정렬 class</td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <h2>문제 Component</h2>
+  <table>
+    <colgroup>
+      <col width="15%">
+      <col width="15%">
+      <col width="70%">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th colspan="3" style="background-color:gray; color: #fff;">block 형태 class</th>
+      </tr>
+      <tr>
+        <th>.question-component-wrap</th>
+        <td colspan="2">문제를 감싸는 최상단 class</td>
+      </tr>
+      <tr>
+        <th>.question-component-</th>
+        <td colspan="2">시작하는 class 모두 block 형태. 하단 여백 값을 가짐</td>
+      </tr>
+      <tr>
+        <th>.question-component-num</th>
+        <td colspan="2">문항 번호 class</td>
+      </tr>
+      <tr>
+        <th>.question-component-fix-title</th>
+        <td colspan="2">'문제' 타이틀 class</td>
+      </tr>
+      <tr>
+        <th rowspan="2">.question-component-text</th>
+        <td colspan="2">문제 텍스트 class</td>
+      </tr>
+      <tr>
+        <th>.blank-inner-left<br />.blank-inner-center<br />.blank-inner-right</th>
+        <td>문제 안에 block 형태가 세로 중앙정렬 되어야 하는 경우 추가 class</td>
+      </tr>
+      <tr>
+        <th>.question-component-input</th>
+        <td colspan="2">답 입력하는 input을 감싸는 class</td>
+      </tr>
+      <tr>
+        <th rowspan="2">.question-component-box-type</th>
+        <td colspan="2">문제에 삽입된 박스형태 class (테이블 형태x) </td>
+      </tr>
+      <tr>
+        <th>.title-inner-type</th>
+        <td>&lt;보기&gt; 제목이 들어갈때</td>
+      </tr>
+      <tr>
+        <th>.question-component-image</th>
+        <td  colspan="2">문제에 삽입된 이미지 class</td>
+      </tr>
+      <tr>
+        <th rowspan="3">.question-component-choice</th>
+        <td colspan="2">객관식 class 1열에 5개</td>
+      </tr>
+      <tr>
+        <th>.row-type</th>
+        <td>보기가 1열에 1개씩 나올때</td>
+      </tr>
+      <tr>
+        <th>.col03-type</th>
+        <td>보기가 1열에 3개씩 나올때</td>
+      </tr>
+      <tr>
+        <th>.question-component-choice-item</th>
+        <td colspan="2">객관식 문항 항목 class</td>
+      </tr>
+      <tr>
+        <th>.question-component-layer</th>
+        <td colspan="2">인풋 클릭시 레이어 팝업 뜨는 class</td>
+      </tr>
+      <tr>
+        <th colspan="3" style="background-color:gray; color: #fff;">inline 형태 class</th>
+      </tr>
+      <tr>
+        <th>.component-math</th>
+        <td colspan="2">수학 서식 class</td>
+      </tr>
+      <tr>
+        <th>.component-input-text</th>
+        <td colspan="2">인풋 꾸밈 class</td>
+      </tr>
+      <tr>
+        <th>.component-input</th>
+        <td colspan="2">인풋 class</td>
+      </tr>
+      <tr>
+        <th>.component-input-line</th>
+        <td colspan="2">line이 들어가는 인풋 class</td>
+      </tr>
+      <tr>
+        <th>.component-radio-label</th>
+        <td colspan="2">객관식 문항 class</td>
+      </tr>
+      <tr>
+        <th>.component-blank-square</th>
+        <td colspan="2">네모 공란 class</td>
+      </tr>
+      <tr>
+        <th>.component-text-image</th>
+        <td colspan="2">문제에 삽입된 inline 이미지 class</td>
+      </tr>
+      <tr>
+        <th>.component-box-flex</th>
+        <td colspan="2">박스 타입 안에 flex 정렬 되어야 할 경우 class</td>
+      </tr>
+      <tr>
+        <th>.component-box-col</th>
+        <td colspan="2">.component-box-flex 자식 요소 class</td>
+      </tr>
+      <tr>
+        <th>.component-layer-pop</th>
+        <td colspan="2">layer-pop class 하위 요소는 샘플 참고</td>
+      </tr>
+    </tbody>
+    
+  </table>
+</body>
+</html>

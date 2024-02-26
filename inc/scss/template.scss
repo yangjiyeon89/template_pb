@@ -1,0 +1,236 @@
+$min-width: 10%;
+$color-default: #000;
+$color-point: #24a148;
+$color-point02: rgb(1, 117, 190);
+$font-size-default: 16px;
+$font-family-default: 'Noto Sans KR',sans-serif,Arial,"Helvetica Neue",Helvetica;
+
+// 삭제
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+xmp {
+  font-family: $font-family-default;
+  font-size: 14px;
+  white-space: pre-wrap;
+  background-color: #ddd;
+}
+
+#chunjae-template-guide {
+  font-size: $font-size-default;
+  font-family: $font-family-default;
+
+  // 공통 class
+  input[type=radio] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+  }
+
+  // align class
+  .component-align-left {
+    text-align: left !important;
+  }
+  .component-align-center {
+    text-align: center !important;
+  }
+  .component-align-right {
+    text-align: right !important;
+  }
+
+  // 문제 component
+  
+  [class^=question-component-] {
+    margin-bottom: 10px;
+  }  
+
+  //타이틀 영역
+  .question-component-num {
+    font-weight: 600;
+  }
+  .question-component-fix-title {
+    color: $color-point;
+    font-weight: 600;
+  }
+  .question-component-text {
+    font-size: 15px;
+  }
+
+  // inline 요소
+  .component-text-image {
+    display: inline-block;
+  }
+  .component-math {
+    display: inline-block;
+  }
+  .component-text {
+    display: inline-block;
+  }
+  .component-blank-square {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    margin: 0 10px;
+    border: 1px solid $color-default;
+  }
+  .component-box-title {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    padding: 0 10px;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+
+  // 1단 박스
+  .question-component-box-type {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid $color-default;
+    .component-input {
+      width: $min-width;
+    }
+  }
+  .component-box-flex {
+    display: flex;
+  }  
+  .component-box-col {
+    flex: 1;
+  }
+
+  // table type
+  .component-table-th, .component-table-td {
+    padding: 10px;
+    border: 1px solid $color-default;
+  }
+  .component-table-th {
+    text-align: center;
+    background-color: #d6d6d6;
+  }
+
+  // input style
+  .component-input {
+    border: 0;
+    text-align: center;
+  }
+  .component-input-line {
+    text-align: center;
+  }
+  .component-input-text {
+    display: inline-block;
+  }
+  .component-radio-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 100%;
+    border: 1px solid $color-default;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + .component-radio-label {
+    color: #fff;
+    font-weight: 600;
+    border-color: $color-point02;
+    background-color: $color-point02;
+  }
+
+  //객관식
+  .question-component-choice {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &.col03-type {
+      .question-component-choice-item {
+        width: 33.333333%;
+        flex: none;
+      }
+    }&.row-type {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .question-component-choice-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 5px;
+  }
+
+  // blank inner
+  .blank-inner-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .blank-inner-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  //보기
+  .title-inner-type {
+    position: relative;
+    padding: 20px 0;
+  }
+
+  //layer
+  .component-layer-pop {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    .layer-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      color: #fff;
+      background-color: $color-point;
+      .layer-close {
+        color: #fff;
+      }
+    }
+    .layer-choice-wrap {
+      display: flex;
+      gap: 10px;
+      padding: 15px;
+      background-color: #fff;
+      .layer-choice-content {
+        min-width: 70px;
+        padding: 10px 0;
+        flex: 1;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          border-color: $color-point;
+          background-color: $color-point;
+        }
+      }      
+    }
+    &.on {
+      display: block;
+    }
+  }
+
+  // 선잇기
+  .question-component-line-connect {
+    display: flex;
+  }
+  .component-left-wrap , .component-right-wrap {
+    flex: 1;
+  }
+}
