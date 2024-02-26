@@ -33,52 +33,55 @@ xmp {
   }
 
   // align class
-  .component-align-left {
+  .inline-align-left {
     text-align: left !important;
   }
-  .component-align-center {
+  .inline-align-center {
     text-align: center !important;
   }
-  .component-align-right {
+  .inline-align-right {
     text-align: right !important;
   }
 
   // 문제 component
   
-  [class^=question-component-] {
+  [class^=template-] {
+    margin-bottom: 10px;
+  }  
+  [class^=block-] {
     margin-bottom: 10px;
   }  
 
   //타이틀 영역
-  .question-component-num {
+  .template-top-num {
     font-weight: 600;
   }
-  .question-component-fix-title {
+  .template-top-title {
     color: $color-point;
     font-weight: 600;
   }
-  .question-component-text {
+  .block-text {
     font-size: 15px;
   }
 
   // inline 요소
-  .component-text-image {
+  .inline-text-image {
     display: inline-block;
   }
-  .component-math {
+  .inline-math {
     display: inline-block;
   }
-  .component-text {
+  .inline-text {
     display: inline-block;
   }
-  .component-blank-square {
+  .inline-blank-square {
     display: inline-block;
     width: 100px;
     height: 20px;
     margin: 0 10px;
     border: 1px solid $color-default;
   }
-  .component-box-title {
+  .inline-box-title {
     position: absolute;
     top: -11px;
     left: 50%;
@@ -88,43 +91,43 @@ xmp {
   }
 
   // 1단 박스
-  .question-component-box-type {
+  .block-box-type {
     padding: 10px;
     text-align: center;
     border: 1px solid $color-default;
-    .component-input {
+    .inline-input {
       width: $min-width;
     }
   }
-  .component-box-flex {
+  .inline-box-flex {
     display: flex;
   }  
-  .component-box-col {
+  .inline-box-col {
     flex: 1;
   }
 
   // table type
-  .component-table-th, .component-table-td {
+  .inline-table-th, .inline-table-td {
     padding: 10px;
     border: 1px solid $color-default;
   }
-  .component-table-th {
+  .inline-table-th {
     text-align: center;
     background-color: #d6d6d6;
   }
 
   // input style
-  .component-input {
+  .inline-input {
     border: 0;
     text-align: center;
   }
-  .component-input-line {
+  .inline-input-line {
     text-align: center;
   }
-  .component-input-text {
+  .inline-input-text {
     display: inline-block;
   }
-  .component-radio-label {
+  .inline-radio-label {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +138,7 @@ xmp {
     border: 1px solid $color-default;
     cursor: pointer;
   }
-  input[type="radio"]:checked + .component-radio-label {
+  input[type="radio"]:checked + .inline-radio-label {
     color: #fff;
     font-weight: 600;
     border-color: $color-point02;
@@ -143,12 +146,12 @@ xmp {
   }
 
   //객관식
-  .question-component-choice {
+  .block-choice {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     &.col03-type {
-      .question-component-choice-item {
+      .block-choice-item {
         width: 33.333333%;
         flex: none;
       }
@@ -157,7 +160,7 @@ xmp {
       align-items: flex-start;
     }
   }
-  .question-component-choice-item {
+  .block-choice-item {
     display: flex;
     align-items: center;
     flex: 1;
@@ -183,7 +186,7 @@ xmp {
   }
 
   //layer
-  .component-layer-pop {
+  .inline-layer-pop {
     display: none;
     overflow: hidden;
     position: absolute;
@@ -227,10 +230,10 @@ xmp {
   }
 
   // 선잇기
-  .question-component-line-connect {
+  .block-line-connect {
     display: flex;
   }
-  .component-left-wrap , .component-right-wrap {
+  .inline-left-wrap , .inline-right-wrap {
     flex: 1;
   }
 }

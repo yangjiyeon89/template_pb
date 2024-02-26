@@ -23,45 +23,48 @@ xmp {
   overflow: hidden;
   border: 0;
 }
-#chunjae-template-guide .component-align-left {
+#chunjae-template-guide .inline-align-left {
   text-align: left !important;
 }
-#chunjae-template-guide .component-align-center {
+#chunjae-template-guide .inline-align-center {
   text-align: center !important;
 }
-#chunjae-template-guide .component-align-right {
+#chunjae-template-guide .inline-align-right {
   text-align: right !important;
 }
-#chunjae-template-guide [class^=question-component-] {
+#chunjae-template-guide [class^=template-] {
   margin-bottom: 10px;
 }
-#chunjae-template-guide .question-component-num {
+#chunjae-template-guide [class^=block-] {
+  margin-bottom: 10px;
+}
+#chunjae-template-guide .template-top-num {
   font-weight: 600;
 }
-#chunjae-template-guide .question-component-fix-title {
+#chunjae-template-guide .template-top-title {
   color: #24a148;
   font-weight: 600;
 }
-#chunjae-template-guide .question-component-text {
+#chunjae-template-guide .block-text {
   font-size: 15px;
 }
-#chunjae-template-guide .component-text-image {
+#chunjae-template-guide .inline-text-image {
   display: inline-block;
 }
-#chunjae-template-guide .component-math {
+#chunjae-template-guide .inline-math {
   display: inline-block;
 }
-#chunjae-template-guide .component-text {
+#chunjae-template-guide .inline-text {
   display: inline-block;
 }
-#chunjae-template-guide .component-blank-square {
+#chunjae-template-guide .inline-blank-square {
   display: inline-block;
   width: 100px;
   height: 20px;
   margin: 0 10px;
   border: 1px solid #000;
 }
-#chunjae-template-guide .component-box-title {
+#chunjae-template-guide .inline-box-title {
   position: absolute;
   top: -11px;
   left: 50%;
@@ -69,39 +72,39 @@ xmp {
   transform: translateX(-50%);
   background-color: #fff;
 }
-#chunjae-template-guide .question-component-box-type {
+#chunjae-template-guide .block-box-type {
   padding: 10px;
   text-align: center;
   border: 1px solid #000;
 }
-#chunjae-template-guide .question-component-box-type .component-input {
+#chunjae-template-guide .block-box-type .inline-input {
   width: 10%;
 }
-#chunjae-template-guide .component-box-flex {
+#chunjae-template-guide .inline-box-flex {
   display: flex;
 }
-#chunjae-template-guide .component-box-col {
+#chunjae-template-guide .inline-box-col {
   flex: 1;
 }
-#chunjae-template-guide .component-table-th, #chunjae-template-guide .component-table-td {
+#chunjae-template-guide .inline-table-th, #chunjae-template-guide .inline-table-td {
   padding: 10px;
   border: 1px solid #000;
 }
-#chunjae-template-guide .component-table-th {
+#chunjae-template-guide .inline-table-th {
   text-align: center;
   background-color: #d6d6d6;
 }
-#chunjae-template-guide .component-input {
+#chunjae-template-guide .inline-input {
   border: 0;
   text-align: center;
 }
-#chunjae-template-guide .component-input-line {
+#chunjae-template-guide .inline-input-line {
   text-align: center;
 }
-#chunjae-template-guide .component-input-text {
+#chunjae-template-guide .inline-input-text {
   display: inline-block;
 }
-#chunjae-template-guide .component-radio-label {
+#chunjae-template-guide .inline-radio-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -112,26 +115,26 @@ xmp {
   border: 1px solid #000;
   cursor: pointer;
 }
-#chunjae-template-guide input[type=radio]:checked + .component-radio-label {
+#chunjae-template-guide input[type=radio]:checked + .inline-radio-label {
   color: #fff;
   font-weight: 600;
   border-color: rgb(1, 117, 190);
   background-color: rgb(1, 117, 190);
 }
-#chunjae-template-guide .question-component-choice {
+#chunjae-template-guide .block-choice {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-#chunjae-template-guide .question-component-choice.col03-type .question-component-choice-item {
+#chunjae-template-guide .block-choice.col03-type .block-choice-item {
   width: 33.333333%;
   flex: none;
 }
-#chunjae-template-guide .question-component-choice.row-type {
+#chunjae-template-guide .block-choice.row-type {
   flex-direction: column;
   align-items: flex-start;
 }
-#chunjae-template-guide .question-component-choice-item {
+#chunjae-template-guide .block-choice-item {
   display: flex;
   align-items: center;
   flex: 1;
@@ -151,7 +154,7 @@ xmp {
   position: relative;
   padding: 20px 0;
 }
-#chunjae-template-guide .component-layer-pop {
+#chunjae-template-guide .inline-layer-pop {
   display: none;
   overflow: hidden;
   position: absolute;
@@ -160,23 +163,23 @@ xmp {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-#chunjae-template-guide .component-layer-pop .layer-title-wrap {
+#chunjae-template-guide .inline-layer-pop .layer-title-wrap {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   color: #fff;
   background-color: #24a148;
 }
-#chunjae-template-guide .component-layer-pop .layer-title-wrap .layer-close {
+#chunjae-template-guide .inline-layer-pop .layer-title-wrap .layer-close {
   color: #fff;
 }
-#chunjae-template-guide .component-layer-pop .layer-choice-wrap {
+#chunjae-template-guide .inline-layer-pop .layer-choice-wrap {
   display: flex;
   gap: 10px;
   padding: 15px;
   background-color: #fff;
 }
-#chunjae-template-guide .component-layer-pop .layer-choice-wrap .layer-choice-content {
+#chunjae-template-guide .inline-layer-pop .layer-choice-wrap .layer-choice-content {
   min-width: 70px;
   padding: 10px 0;
   flex: 1;
@@ -185,17 +188,17 @@ xmp {
   border-radius: 4px;
   cursor: pointer;
 }
-#chunjae-template-guide .component-layer-pop .layer-choice-wrap .layer-choice-content:hover {
+#chunjae-template-guide .inline-layer-pop .layer-choice-wrap .layer-choice-content:hover {
   color: #fff;
   border-color: #24a148;
   background-color: #24a148;
 }
-#chunjae-template-guide .component-layer-pop.on {
+#chunjae-template-guide .inline-layer-pop.on {
   display: block;
 }
-#chunjae-template-guide .question-component-line-connect {
+#chunjae-template-guide .block-line-connect {
   display: flex;
 }
-#chunjae-template-guide .component-left-wrap, #chunjae-template-guide .component-right-wrap {
+#chunjae-template-guide .inline-left-wrap, #chunjae-template-guide .inline-right-wrap {
   flex: 1;
 }

@@ -7,7 +7,7 @@ $(function () {
 
   layerBtn.on('focus', function(){
     layerCnt.removeClass('on');
-    $(this).closest('.question-component-layer').find(layerCnt).addClass('on');
+    $(this).closest('.block-layer').find(layerCnt).addClass('on');
 
   });
 
