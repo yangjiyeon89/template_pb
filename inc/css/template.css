@@ -48,6 +48,14 @@ xmp {
 #chunjae-template-guide .block-text {
   font-size: 15px;
 }
+#chunjae-template-guide .block-line {
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+#chunjae-template-guide .block-dotted-line {
+  padding-top: 10px;
+  border-top: 1px dotted #000;
+}
 #chunjae-template-guide .inline-text-image {
   display: inline-block;
 }
@@ -82,6 +90,7 @@ xmp {
 }
 #chunjae-template-guide .inline-box-flex {
   display: flex;
+  width: 100%;
 }
 #chunjae-template-guide .inline-box-col {
   flex: 1;
@@ -104,6 +113,13 @@ xmp {
 #chunjae-template-guide .inline-input-text {
   display: inline-block;
 }
+#chunjae-template-guide .inline-input-underline {
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+#chunjae-template-guide .inline-input-radio {
+  display: inline-block;
+}
 #chunjae-template-guide .inline-radio-label {
   display: inline-flex;
   align-items: center;
@@ -115,11 +131,32 @@ xmp {
   border: 1px solid #000;
   cursor: pointer;
 }
+#chunjae-template-guide .inline-radio-label.empty {
+  border: 0;
+}
 #chunjae-template-guide input[type=radio]:checked + .inline-radio-label {
   color: #fff;
   font-weight: 600;
   border-color: rgb(1, 117, 190);
   background-color: rgb(1, 117, 190);
+}
+#chunjae-template-guide .inline-radio-label-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+#chunjae-template-guide input[type=radio]:checked + .inline-radio-label-text::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  clear: both;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
 }
 #chunjae-template-guide .block-choice {
   display: flex;
@@ -139,6 +176,10 @@ xmp {
   align-items: center;
   flex: 1;
   gap: 5px;
+  width: 100%;
+}
+#chunjae-template-guide .block-choice-item.align-top {
+  align-items: flex-start;
 }
 #chunjae-template-guide .blank-inner-left {
   display: flex;
@@ -152,7 +193,7 @@ xmp {
 }
 #chunjae-template-guide .title-inner-type {
   position: relative;
-  padding: 20px 0;
+  padding: 20px 0 10px;
 }
 #chunjae-template-guide .inline-layer-pop {
   display: none;

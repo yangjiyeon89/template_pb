@@ -63,6 +63,14 @@ xmp {
   .block-text {
     font-size: 15px;
   }
+  .block-line {
+    padding-top: 10px;
+    border-top: 1px solid $color-default;
+  }
+  .block-dotted-line {
+    padding-top: 10px;
+    border-top: 1px dotted $color-default;
+  }
 
   // inline 요소
   .inline-text-image {
@@ -101,6 +109,7 @@ xmp {
   }
   .inline-box-flex {
     display: flex;
+    width: 100%;
   }  
   .inline-box-col {
     flex: 1;
@@ -127,6 +136,13 @@ xmp {
   .inline-input-text {
     display: inline-block;
   }
+  .inline-input-underline {
+    border: 0;
+    border-bottom: 1px solid $color-default;
+  }
+  .inline-input-radio {
+    display: inline-block;
+  }
   .inline-radio-label {
     display: inline-flex;
     align-items: center;
@@ -137,12 +153,34 @@ xmp {
     border-radius: 100%;
     border: 1px solid $color-default;
     cursor: pointer;
+    &.empty {
+      border: 0;
+    }
   }
   input[type="radio"]:checked + .inline-radio-label {
     color: #fff;
     font-weight: 600;
     border-color: $color-point02;
     background-color: $color-point02;
+  }
+  .inline-radio-label-text {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + .inline-radio-label-text {
+    &::before {
+      position: absolute;
+      top: 50%;left: 50%;
+      content: "";
+      display: block;
+      clear: both;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $color-default;
+    }
   }
 
   //객관식
@@ -165,6 +203,10 @@ xmp {
     align-items: center;
     flex: 1;
     gap: 5px;
+    width: 100%;
+    &.align-top {
+      align-items: flex-start;
+    }
   }
 
   // blank inner
@@ -182,7 +224,7 @@ xmp {
   //보기
   .title-inner-type {
     position: relative;
-    padding: 20px 0;
+    padding: 20px 0 10px;
   }
 
   //layer
