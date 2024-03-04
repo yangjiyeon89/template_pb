@@ -312,3 +312,14 @@ xmp {
   width: 100%;
   height: 100%;
 }
+
+#chunjae-template-guide .block-table-type.type-math .inline-table .type-equals {
+  border-top: 1px solid #000;
+}
+#chunjae-template-guide .block-table-type.type-math .inline-table-th, 
+#chunjae-template-guide .block-table-type.type-math .inline-table-td {
+  border: none; text-align: center;
+}
+#chunjae-template-guide .block-table-type.type-math .inline-table-th {
+  background-color: #fff;
+}
