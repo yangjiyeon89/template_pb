@@ -1,0 +1,5 @@
+#chunjae-template-guide .inline-underline {display: inline-block;text-decoration: underline;}
+#chunjae-template-guide .inline-bold {display:inline-block;font-weight:bold;}
+#chunjae-template-guide .inline-box {display: inline-block;}
+#chunjae-template-guide .text-balloon-wrap {position:relative;}
+#chunjae-template-guide .text-balloon-item {position:absolute;top:0;left:0;border:1px solid #000;border-radius:50%;padding:10px;}
